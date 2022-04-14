@@ -13,10 +13,12 @@ function onFormSubmit(event) {
          const password = event.currentTarget.elements.password.value
 
          const FormData = {
-         email, password
-    }
+             email, password
+             
+         }
+        event.currentTarget.reset();
         console.log(FormData);
     }
    
-    event.currentTarget.reset();
+    
 }
